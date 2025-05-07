@@ -1,72 +1,107 @@
-# Body Signals Analysis of Smoking and Drinking
+# 🧬 The Impact on Body Signals: Analysis of Smoking and Drinking
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-## 🚀 Overview
+## 📊 Overview
 
-This project investigates the relationship between body signal data and smoking/drinking behaviors. Using a dataset of 70,000+ physiological records, we developed machine learning models to classify individuals based on their smoking and drinking status, achieving strong performance and clear visual insights.
-
-**Key achievements:**
-- Comprehensive preprocessing and feature engineering (BMI, age groups, blood pressure categories, cholesterol ratio, etc.).
-- Correlation analysis and hypothesis testing (t-tests, chi-squared tests) to explore statistical relationships.
-- Built two classification models (SVM & XGBoost) with ~81% accuracy.
-- Data visualization to support interpretability.
+This project explores the relationship between physiological signals and smoking/drinking behaviors. Utilizing a dataset of over 70,000 records, we developed machine learning models to classify individuals based on their smoking and drinking status, achieving an accuracy of approximately 81%.
 
 ---
 
-## 🗂️ Dataset
+## 🧠 Methodology
 
-The dataset contains physiological measurements such as:
-- Blood pressure (systolic/diastolic)
-- Heart rate
-- Cholesterol levels
-- Vision metrics
-- BMI (calculated)
+### 🔄 Data Preprocessing
 
-**Note:** The dataset is not included due to privacy and licensing reasons.
+- **Feature Engineering**: Created new features such as BMI, age groups, blood pressure categories, and cholesterol levels.
+- **Data Cleaning**: Handled missing values and outliers to ensure data quality.
 
----
+### 🧪 Model Development
 
-## 🔧 Methods & Techniques
+- **Algorithms Used**:
+  - Support Vector Machine (SVM)
+  - XGBoost Classifier
+- **Dimensionality Reduction**:
+  - Principal Component Analysis (PCA)
+- **Evaluation Metrics**:
+  - Accuracy: ~81%
+  - Confusion Matrix
+  - ROC Curve
 
-### Preprocessing
-- Missing data handling (imputation using median/mode)
-- Feature engineering:
-    - BMI calculation
-    - Age group categorization
-    - Blood pressure classification
-    - Cholesterol ratio computation
-    - Vision impairment flag
+### 📈 Visualization
 
-### Statistical Analysis
-- **Correlation analysis:** Pearson correlation & heatmaps
-- **Hypothesis testing:**
-    - T-tests between smokers/non-smokers
-    - Chi-squared tests for categorical variables
-
-### Models
-- **SVM (Support Vector Machine):**
-    - Kernel-based classification
-    - Accuracy: ~81%
-
-- **XGBoost:**
-    - Gradient-boosted trees
-    - Accuracy: ~81%
-    - Feature importance analysis
-
-### Dimensionality Reduction
-- **PCA (Principal Component Analysis):**
-    - Used to reduce feature space for visualization.
+- Generated comprehensive visualizations to illustrate the distribution of physiological signals among different groups.
+- Visual tools used include histograms, box plots, and scatter plots.
 
 ---
 
-## 📊 Visualizations
+## 📁 Project Structure
 
-- Correlation heatmaps
-- PCA plots
-- Boxplots & countplots for hypothesis testing
-- Pie charts for distribution insights
+```
+the_impact_on_body-signals-analysis-of-smoking-and-drinking/
+├── CSC240_final_project.ipynb   # Main analysis notebook
+├── CS240_final_presentation.pdf # Project presentation slides
+├── report.pdf                   # Detailed project report
+├── journal.md                   # Project journal and notes
+├── LICENSE                      # MIT License
+└── README.md                    # Project documentation
+```
 
-Example:
-```python
-plt.pie(counts, labels=cholesterol_categories, autopct='%1.1f%%')
+---
+
+## 🛠️ Requirements
+
+- Python 3.x
+- Libraries:
+  - pandas
+  - numpy
+  - scikit-learn
+  - xgboost
+  - matplotlib
+  - seaborn
+
+Install the required libraries using pip:
+
+```bash
+pip install pandas numpy scikit-learn xgboost matplotlib seaborn
+```
+
+---
+
+## ▶️ Usage
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/AnakinHuang/the_impact_on_body-signals-analysis-of-smoking-and-drinking.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd the_impact_on_body-signals-analysis-of-smoking-and-drinking
+   ```
+
+3. Open the Jupyter Notebook:
+
+   ```bash
+   jupyter notebook CSC240_final_project.ipynb
+   ```
+
+4. Run the notebook cells sequentially to reproduce the analysis.
+
+---
+
+## 👤 Author
+
+- **Yuesong Huang** (yhu116@u.rochester.edu)
+- **Junhua Huang** (jhuang77@u.rochester.edu)
+- **Yuyang Wang** (ywang383@u.rochester.edu)
+- **Boyang Wang** (bwang55@u.rochester.edu)
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
